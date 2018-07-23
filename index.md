@@ -1,22 +1,32 @@
-## Welcome to GitHub Pages
+## 机器学习笔记
 
-You can use the [editor on GitHub](https://github.com/hutianhao/machine-learning-notes/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+### 机器学习基本分类
+- 算法：机器学习的方法叫算法
+1. 监督学习 supervised learning：提供标签，让计算机去学习。神经网络同样是监督学习
+2. 非监督学习 un-supervised learning：让计算机自己去识别，不用提供数据所对应的标签信息，计算机观察特性，会发现特性背后所对应的规律
+3. 半监督学习 semi-supervised learning：少量有标签的样本和大量无标签的样本进行训练和分类
+4. 强化学习 reinforcement learning：让计算机完成一项从未接触过的任务，计算机自己尝试各种手段进行完成。例：google alphago
+5. 遗传算法 genetic algorithm：优胜劣汰，适者生存
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+### 神经网络pk人工神经网络
 
-### Markdown
+### 什么是神经网路
+- 基于传统统计学进行建模，是一种运算模型，神经元也可以被训练和强化
+1. 输入层：直接接受信息
+2. 隐藏层：可以有多层，习惯上有一层，负责传入数据的加工和处理
+3. 输出层：信息在神经元中传递和中转输出的结果
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+- 对比预测答案和正确答案的差别，然后把这种差别反向传递回去，对每一个神经元向正确的方向上改进一些
 
-```markdown
-Syntax highlighted code block
+### 卷积神经网络
 
-# Header 1
-## Header 2
-### Header 3
+- 在图片和语言识别中能够给出优秀的结果，最常用的是图片识别
+1. 输入是一张图片时，其实输入到计算机中是数字
+2. 不是对每一个像素进行处理，是对每一块像素区域进行处理，
+3. 黑白照片，高度height=1，彩色照片高度height=3
+4. 卷积后输出一个高度更高，长和宽更小的一个图片，图片中包含更多的边缘信息
+5. ![image]('file:\\,/Users/kevin/Downloads/pic/cat1.jpeg')
 
-- Bulleted
-- List
 
 1. Numbered
 2. List
@@ -26,12 +36,4 @@ Syntax highlighted code block
 [Link](url) and ![Image](src)
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/hutianhao/machine-learning-notes/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
